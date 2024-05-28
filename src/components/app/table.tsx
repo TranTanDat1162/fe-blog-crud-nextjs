@@ -36,7 +36,6 @@ const TableDemo = (props: Iprops) => {
         <TableCaption>A list of your blogs.</TableCaption>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">No</TableHead>
             <TableHead>Title</TableHead>
             <TableHead>Author</TableHead>
             <TableHead>Content</TableHead>
@@ -46,7 +45,6 @@ const TableDemo = (props: Iprops) => {
         <TableBody>
           {blogs?.map((item) => (
             <TableRow key={item.id}>
-              <TableCell>{item?.id}</TableCell>
               <TableCell>{item?.title}</TableCell>
               <TableCell>{item?.author}</TableCell>
               <TableCell className="truncate">{item?.content}</TableCell>
