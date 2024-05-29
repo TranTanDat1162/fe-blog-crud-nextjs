@@ -8,7 +8,7 @@ git clone https://github.com/TranTanDat1162/fe-blog-crud-nextjs
 
 Second, move to the project with cmd below:
 ```
-cd blog
+cd fe-blog-crud-nextjs
 code .
 ```
 
