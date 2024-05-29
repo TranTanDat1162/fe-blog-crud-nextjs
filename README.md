@@ -1,7 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
-First, open your vscode using git version to clone the project with cmd below:```
+First, open your vscode using git version to clone the project with cmd below:
+```
 git clone https://github.com/TranTanDat1162/fe-blog-crud-nextjs
 ```
 
