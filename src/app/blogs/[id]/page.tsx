@@ -12,7 +12,7 @@ const ViewDetailedBlog = ({ params }: { params: { id: number } }) => {
   const fetcher: Fetcher<IBlog, string> = (url: string) =>
     fetch(url).then((res) => res.json());
   const { data, error, isLoading } = useSWR(
-    `https://pure-enthusiasm-production.up.railway.app/api/blogs/${params.id}`,
+    `http://localhost:8080/api/blogs/${params.id}`,
     fetcher,
     {
       revalidateOnReconnect: false,

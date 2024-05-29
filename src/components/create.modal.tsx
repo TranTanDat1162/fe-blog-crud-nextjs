@@ -53,7 +53,7 @@ const CreateModal = () => {
     }
 
     // Fetch API POST to add blog
-    fetch("https://pure-enthusiasm-production.up.railway.app/api/blogs", {
+    fetch("http://localhost:8080/api/blogs", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const CreateModal = () => {
           });
           handleCloseModal();
           // When added, it automatically appears to main page with data added.
-          mutate("https://pure-enthusiasm-production.up.railway.app/api/blogs");
+          mutate("http://localhost:8080/api/blogs");
         }
       });
   };

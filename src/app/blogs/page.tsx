@@ -6,7 +6,7 @@ import useSWR from "swr";
 const BlogPage = () => {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data, error, isLoading } = useSWR(
-    "https://pure-enthusiasm-production.up.railway.app/api/blogs",
+    "http://localhost:8080/api/blogs",
     fetcher,
     {
       revalidateOnReconnect: false,
