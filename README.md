@@ -1,8 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+First, open your vscodeusing git version to clone the project with cmd below:
+```git clone https://github.com/TranTanDat1162/fe-blog-crud-nextjs
+```
 
-First, run the development server:
+Second, move to the project with cmd below:
+```
+    cd blog
+    code .
+```
+
+Third, run the development server:
 
 ```bash
 npm run dev
@@ -24,5 +33,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 This project was inspired from author [Hỏi Dân IT](https://www.youtube.com/@hoidanit)
 
-It basically CRUD for blog data with SpringBoot Backend Server [My Backend Server](https://github.com/TranTanDat1162/backend-blog-crud-springboot-nextjs)
+It basically CRUD for blog data with SpringBoot Backend Server [My Backend Server](https://github.com/TranTanDat1162/backend-blog-crud-springboot-nextjs) (Instruction will be shown in my backend server github)
 
