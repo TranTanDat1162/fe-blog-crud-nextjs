@@ -53,7 +53,7 @@ const CreateModal = () => {
     }
 
     // Fetch API POST to add blog
-    fetch("http://localhost:8080/api/blogs", {
+    fetch(`${process.env.PATH_URL_BACKEND}/api/blogs`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const CreateModal = () => {
           });
           handleCloseModal();
           // When added, it automatically appears to main page with data added.
-          mutate("http://localhost:8080/api/blogs");
+          mutate(`${process.env.PATH_URL_BACKEND}/api/blogs`);
         }
       });
   };

@@ -20,7 +20,7 @@ export function DeleteModal({ id }: { id: number }) {
 
   const handleDeletebtn = async (id: number) => {
     // Fetch API PUT to edit blog with id
-    fetch(`http://localhost:8080/api/blogs/${id}`, {
+    fetch(`${process.env.PATH_URL_BACKEND}/api/blogs/${id}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export function DeleteModal({ id }: { id: number }) {
           variant: "success",
         });
         // When added, it automatically appears to main page with data added.
-        mutate("http://localhost:8080/api/blogs");
+        mutate(`${process.env.PATH_URL_BACKEND}/api/blogs`);
       }
     });
   };
